@@ -8,6 +8,12 @@ Library supports stream mode using interrupt.
 Tested with an Arduino Leopard. Solution compiled in Visual Micro, but 
 can also be opened with Arduino IDE.
 
+Circuit: a ThinkPad T60 TrackPoint module (ripped from broken keyboard)
+connected to an Arduino Leopard. See comments in .ino for more connection
+information.
+
+![](/readme-photo/Leonardo-TrackPoint.jpg)
+
 # Files
 
 Library: TrackPoint.cpp, TrackPoint.h
