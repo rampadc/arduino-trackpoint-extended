@@ -1,5 +1,4 @@
 # Introduction
-
 This TrackPoint library is used to interface with a TrackPoint module 
 that is available on most ThinkPad keyboards. It can also be used as a 
 general purpose PS/2 mouse library.
@@ -8,6 +7,11 @@ Library supports stream mode using interrupt.
 
 Tested with an Arduino Leopard. Solution compiled in Visual Micro, but 
 can also be opened with Arduino IDE.
+
+# Files
+
+Library: TrackPoint.cpp, TrackPoint.h
+Example: TrackPoint_INT.ino
 
 # License
 Copyright (c) 2014 Cong Nguyen
