@@ -5,6 +5,7 @@
 * Author: CONG NGUYEN
 *
 * Expanding on Felix Kee's TrackPoint class: https://github.com/feklee/arduino-trackpoint
+* Removed onesCounter and incomingParity
 */
 
 
@@ -46,9 +47,6 @@ void TrackPoint::getDataBit(void) {
 	n = bitcount-1;
 	if(n <= 7) {
 		incoming |= (val << n);
-		if(val) onesCounter++;
-		} else if(n == 8) {
-		incomingParity = val;
 	}
 	bitcount++;
 
