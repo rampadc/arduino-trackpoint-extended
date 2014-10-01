@@ -43,13 +43,15 @@ class TrackPoint
 	void setStreamMode(void);
 	DataReport getStreamReport(void);
 	
+	void gohi(uint8_t pin);
+	void golo(uint8_t pin);
+	
 	protected:
 	
 	private:
 	TrackPoint( const TrackPoint &c );
 	TrackPoint& operator=( const TrackPoint &c );
-	void gohi(uint8_t pin);
-	void golo(uint8_t pin);
+	
 	
 	//TrackPoint pins
 	uint8_t _clkPin;
@@ -66,6 +68,7 @@ class TrackPoint
 	volatile uint8_t incoming;
 	volatile uint8_t counter;
 	volatile uint8_t dataAvailable;
+	uint8_t usingSeparateResetPin;
 
 }; //TrackPoint
 

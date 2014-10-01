@@ -121,10 +121,27 @@ void TrackPoint::setStreamMode() {
 }
 
 void TrackPoint::reset() {
-	pinMode(_resetPin, OUTPUT);
-	digitalWrite(_resetPin, HIGH);
-	delay(2000); // empirical value
-	digitalWrite(_resetPin, LOW);
+	if(_resetPin != 0) { 
+		//Arduino doesn't have a pin 0, user is using a separate pin for the RESET line
+		pinMode(_resetPin, OUTPUT);
+		digitalWrite(_resetPin, HIGH);
+		delay(2000); // empirical value
+		digitalWrite(_resetPin, LOW);	
+	} else {
+		/*
+			an inverter RC circuit is being used, pull CLOCK low for
+			5ms to charge RESET line, then leave it there for 2s,
+			then pull CLOCK high for 5ms to discharge the RC circuit
+			to pull RESET line LOW.
+		*/
+		golo(_clkPin);
+		delay(5);
+		delay(2000);
+		gohi(_clkPin);
+		delay(10);
+		
+		gohi(_clkPin);
+	}
 }
 
 TrackPoint::DataReport TrackPoint::readData() {

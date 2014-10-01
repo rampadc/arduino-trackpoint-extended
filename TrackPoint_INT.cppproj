@@ -28,15 +28,15 @@
     <BootSegment>0</BootSegment>
     <AsfFrameworkConfig>
       <framework-data>
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.3.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.6.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -62,7 +62,11 @@
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\leonardo</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>D:\Arduino_workspace\arduino-thinkpad\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
@@ -91,7 +95,11 @@
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\leonardo</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>D:\Arduino_workspace\arduino-thinkpad\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
@@ -112,9 +120,9 @@
     </ToolchainSettings>
     <VisualMicroSettings>
       <VisualMicroSettings>
-        <arduino.board.name>leonardo</arduino.board.name>
-        <arduino.board.desc>Arduino Leonardo</arduino.board.desc>
-        <arduino.board.property_bag>name=Arduino Leonardo
+        <arduino.board.name>micro</arduino.board.name>
+        <arduino.board.desc>Arduino Micro</arduino.board.desc>
+        <arduino.board.property_bag>name=Arduino Micro
 upload.protocol=avr109
 upload.maximum_size=28672
 upload.speed=57600
@@ -123,21 +131,20 @@ bootloader.low_fuses=0xff
 bootloader.high_fuses=0xd8
 bootloader.extended_fuses=0xcb
 bootloader.path=caterina
-bootloader.file=Caterina-Leonardo.hex
+bootloader.file=Caterina-Micro.hex
 bootloader.unlock_bits=0x3F
 bootloader.lock_bits=0x2F
 build.mcu=atmega32u4
 build.f_cpu=16000000L
 build.vid=0x2341
-build.pid=0x8036
+build.pid=0x8037
 build.core=arduino
-build.variant=leonardo
-runtime.ide.path=C:\Program Files (x86)\Arduino\
+build.variant=micro
+runtime.ide.path=C:\Program Files (x86)\Arduino
 build.system.path=C:\Program Files (x86)\Arduino\hardware\arduino\system
-runtime.ide.version=101
-originalid=leonardo
+runtime.ide.version=105
+originalid=micro
 vm.platform.root.path=C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x
-vm.core.include=arduino.h
 ide.hint=Arduino 0023 and 1.0.x Ide
 ide.location.key=Arduino
 ide.location.ide.winreg=Arduino 1.0.x Application
@@ -160,11 +167,26 @@ ide.url=http://arduino.cc/en/Main/Software
 vm.debug=true
 software=ARDUINO
 ide.appid=arduino10x
-location.sketchbook=D:\SVNs\arduino-thinkpad
-build.board=AVR_LEONARDO
+location.sketchbook=D:\Arduino_workspace\arduino-thinkpad
+vm.core.include=arduino.h
+build.board=AVR_MICRO
 vm.boardsource.path=C:\Program Files (x86)\Arduino\hardware\arduino
+runtime.platform.path=C:\Program Files (x86)\Arduino\hardware\arduino
 vm.platformname.name=avr
 build.arch=AVR
+vm.runtime.compiler.showwarnings=false
+compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+includes= -I"C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino"  -I"C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro" 
+build.path=C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro
+build.project_name=TrackPoint_INT
+build.variant.path=C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro
+archive_file=core.a
+object_file=C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint_INT.cpp.o
+source_file=C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint_INT.cpp
+build.architecture=avr
+vmresolved.compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+vmresolved.tools.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+object_files="C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint.cpp.o" "C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint_INT.cpp.o" 
 </arduino.board.property_bag>
         <arduino.build.mcu>atmega32u4</arduino.build.mcu>
         <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
@@ -175,7 +197,7 @@ build.arch=AVR
         <visualmicro.application.name>arduino10x</visualmicro.application.name>
         <visualmicro.package.name>arduino</visualmicro.package.name>
         <visualmicro.platform.name>avr</visualmicro.platform.name>
-        <arduino.upload.port>COM13</arduino.upload.port>
+        <arduino.upload.port>COM18</arduino.upload.port>
       </VisualMicroSettings>
     </VisualMicroSettings>
   </PropertyGroup>
@@ -202,7 +224,11 @@ build.arch=AVR
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\leonardo</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>D:\Arduino_workspace\arduino-thinkpad\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
@@ -231,7 +257,11 @@ build.arch=AVR
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\leonardo</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>D:\Arduino_workspace\arduino-thinkpad\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
@@ -252,9 +282,9 @@ build.arch=AVR
     </ToolchainSettings>
     <VisualMicroSettings>
       <VisualMicroSettings>
-        <arduino.board.name>leonardo</arduino.board.name>
-        <arduino.board.desc>Arduino Leonardo</arduino.board.desc>
-        <arduino.board.property_bag>name=Arduino Leonardo
+        <arduino.board.name>micro</arduino.board.name>
+        <arduino.board.desc>Arduino Micro</arduino.board.desc>
+        <arduino.board.property_bag>name=Arduino Micro
 upload.protocol=avr109
 upload.maximum_size=28672
 upload.speed=57600
@@ -263,21 +293,20 @@ bootloader.low_fuses=0xff
 bootloader.high_fuses=0xd8
 bootloader.extended_fuses=0xcb
 bootloader.path=caterina
-bootloader.file=Caterina-Leonardo.hex
+bootloader.file=Caterina-Micro.hex
 bootloader.unlock_bits=0x3F
 bootloader.lock_bits=0x2F
 build.mcu=atmega32u4
 build.f_cpu=16000000L
 build.vid=0x2341
-build.pid=0x8036
+build.pid=0x8037
 build.core=arduino
-build.variant=leonardo
-runtime.ide.path=C:\Program Files (x86)\Arduino\
+build.variant=micro
+runtime.ide.path=C:\Program Files (x86)\Arduino
 build.system.path=C:\Program Files (x86)\Arduino\hardware\arduino\system
-runtime.ide.version=101
-originalid=leonardo
+runtime.ide.version=105
+originalid=micro
 vm.platform.root.path=C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x
-vm.core.include=arduino.h
 ide.hint=Arduino 0023 and 1.0.x Ide
 ide.location.key=Arduino
 ide.location.ide.winreg=Arduino 1.0.x Application
@@ -300,11 +329,26 @@ ide.url=http://arduino.cc/en/Main/Software
 vm.debug=true
 software=ARDUINO
 ide.appid=arduino10x
-location.sketchbook=D:\SVNs\arduino-thinkpad
-build.board=AVR_LEONARDO
+location.sketchbook=D:\Arduino_workspace\arduino-thinkpad
+vm.core.include=arduino.h
+build.board=AVR_MICRO
 vm.boardsource.path=C:\Program Files (x86)\Arduino\hardware\arduino
+runtime.platform.path=C:\Program Files (x86)\Arduino\hardware\arduino
 vm.platformname.name=avr
 build.arch=AVR
+vm.runtime.compiler.showwarnings=false
+compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+includes= -I"C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino"  -I"C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro" 
+build.path=C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro
+build.project_name=TrackPoint_INT
+build.variant.path=C:\Program Files (x86)\Arduino\hardware\arduino\variants\micro
+archive_file=core.a
+object_file=C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint_INT.cpp.o
+source_file=C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint_INT.cpp
+build.architecture=avr
+vmresolved.compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+vmresolved.tools.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+object_files="C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint.cpp.o" "C:\Users\CONG\AppData\Local\VMicro\Arduino\Builds\TrackPoint_INT\micro\TrackPoint_INT.cpp.o" 
 </arduino.board.property_bag>
         <arduino.build.mcu>atmega32u4</arduino.build.mcu>
         <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
@@ -315,7 +359,7 @@ build.arch=AVR
         <visualmicro.application.name>arduino10x</visualmicro.application.name>
         <visualmicro.package.name>arduino</visualmicro.package.name>
         <visualmicro.platform.name>avr</visualmicro.platform.name>
-        <arduino.upload.port>COM13</arduino.upload.port>
+        <arduino.upload.port>COM18</arduino.upload.port>
       </VisualMicroSettings>
     </VisualMicroSettings>
   </PropertyGroup>
@@ -332,6 +376,9 @@ build.arch=AVR
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="TrackPoint.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Visual Micro\.arduino-trackpoint-extended.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Visual Micro\.TrackPoint_INT.vsarduino.h">
