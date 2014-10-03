@@ -14,6 +14,8 @@ information.
 
 ![](/readme-photo/Leonardo-TrackPoint.jpg)
 
+For schematic and explanation of the RC circuit, visit: http://flashandrc.wordpress.com/2014/10/03/saving-a-pin-with-an-inverter-buffer-and-a-rc-circuit/
+
 # Files
 
 Library: TrackPoint.cpp, TrackPoint.h
